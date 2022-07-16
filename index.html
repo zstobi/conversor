@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ultimate Conversor</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="father">
+            <aside>
+                <div class="asiders" onclick="active4('Mass','Kilograms','Pounds','Grams','Tons')" id="peso">Mass</div>
+                <div class="asiders" onclick="active3('Temperature','Celcius','Fahrenheit','Kelvin')" id="temp">Temperature</div>
+                <div class="asiders" onclick="active4('Time','Seconds','Minutes','Hours','Days')" id="time">Time</div>
+                <div class="asiders" onclick="active3('Speed','Kilometer per hour','Mile per hour','Knots')" id="speed">Speed</div>
+                <div class="asiders" onclick="active2('Volume','Liter','Mililiter')" id="volu">Volume</div>
+                <div class="asiders" onclick="active4('DataSize','MegaByte','GigaByte','KiloByte','TeraByte')" id="data">Data Size</div>
+                <div class="asiders" onclick="active4('Length','Meter','KiloMeter','CentiMeter','Mile')" id="long">Length</div>
+                <div class="asiders" onclick="active5('Gasoline','Kilometers','Miles','Liters','Gallons')" id="nafta">Gasoline Calculator</div>
+            </aside>
+            <main class="main">
+                <h2 class="base">What do you want to convert?</h2>
+            </main>
+            <footer>
+                <div id="esp"><a href="esp-index.html">español</a></div>
+                <div id="github"><img src="gh.png"></div>
+                <div id="lkn"><img src="lkn.png"></div>
+                <div id="color">
+                    <svg id="btnColor" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v11a3 3 0 106 0V4a2 2 0 00-2-2H4zm1 14a1 1 0 100-2 1 1 0 000 2zm5-1.757l4.9-4.9a2 2 0 000-2.828L13.485 5.1a2 2 0 00-2.828 0L10 5.757v8.486zM16 18H9.071l6-6H16a2 2 0 012 2v2a2 2 0 01-2 2z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+            </footer>
+        </div>
+        <script src="conversor.js"></script>
+    </body>
+</html>

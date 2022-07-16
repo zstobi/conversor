@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    font-family: 'Inter';
+    /* border: 1px solid red; */
+}
+
+body {
+    background-color: #011;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+/* DISENO CONTENEDOR PADRE */
+
+.father {
+    background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+    width: 50%;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    border-radius: 8px;
+}
+
+/* DISENO ASIDE */
+
+aside {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: #fff;
+    color: #000;
+    grid-column: 1/2;
+    grid-row: 1/5;
+    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(8,1fr);
+}
+.asiders {
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s;
+}
+.asiders:hover{
+    background-color: #e2dddd;
+    color: #000;
+}
+#peso:hover{
+    border-top-left-radius: 8px;
+    background-color: #e2dddd;
+    color: #000;
+}
+#nafta:hover{
+    border-bottom-left-radius: 8px;
+    background-color: #e2dddd;
+    color: #000;
+}
+
+/* DISENO PRINCIPAL DEL MAIN */
+
+main {
+    height: 100%;
+    width: 100%;
+    grid-column: 2/5;
+    grid-row: 1/5;
+    font-size: larger;
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(4,1fr);
+}
+
+.base {
+    grid-column: 2/4;
+    grid-row: 2/4;
+}
+
+/* DISENO DEL MAIN LUEGO DE ACTIVAR EVENTOS */
+
+.content {
+    grid-row: 1/5;
+    grid-column: 1/5;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    place-content: center;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+
+/* DISENO DE LOS ELEMENTOS DEL MAIN NUEVO */
+
+.title {
+    grid-row: 1/2;
+    grid-column: 1/4;
+}h1,h2 {
+    text-align: center;
+    color: #000;
+}
+
+#uno {
+    grid-column: 1/2;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-rows: repeat(2,1fr);
+    grid-auto-rows: 0%;
+}
+#dos {
+    height: 100%;
+    width: 100%;
+    grid-column: 2/3;
+    display: grid;
+    place-items: center;
+    grid-template-rows: repeat(2,1fr);
+}
+#tres {
+    grid-column: 3/4;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-rows: repeat(2,1fr);
+    grid-auto-rows: 0%;
+}
+#cuatro {
+    grid-column: 1/4;
+    grid-row: 3/4;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3,1fr);   
+}
+
+.inputs {
+    width: 55%;
+    height: 4vh;
+    text-align: center;
+    font-size: medium;
+    background-color: inherit;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+}
+
+.number {
+    grid-row: 1/2;
+}
+.result {
+    grid-row: 1/2;
+}
+
+.first {
+    grid-row: 2/3;
+}
+.second {
+    grid-row: 2/3;
+}
+
+ul {
+    display: grid;
+    place-items: center;
+    list-style: none;
+}
+.li2 {
+    cursor: pointer;
+    text-align: center;
+}
+.li2:hover {
+    color: #b90808;
+}
+
+.options {
+    display: none;
+    place-items: center;
+    transition: 0.2s;
+}
+.opizq {
+    grid-column: 1/2;
+    background-color: #fff;
+    border-radius: 8px;
+    top: 0;
+    height: 100%;
+    width: 70%;
+
+}
+.opder {
+    grid-column: 3/4;
+    background-color: #fff;
+    border-radius: 8px;
+    top: 0;
+    height: 100%;
+    width: 70%;
+}
+
+/* DISENO DE ICONOS DEL MAIN */
+
+.equal {
+    grid-row: 1/2;
+    border-radius: 50px;
+    background-color: #011;
+    border-radius: 8px;
+    color: #37ecba;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.equal:active {
+    color: #fff;
+    transform: translateY(3px);
+}
+.flecha {
+    grid-row: 2/3;
+    border-radius: 50px;
+    background-color: #011;
+    border-radius: 8px;
+    color: #37ecba;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.flecha:active {
+    transform: rotate(180deg);
+    color: #fff;
+}
+
+.dd {
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.dd:active,.dd:focus {
+    transform: rotate(180deg);
+    color: #000;
+}
+.h-6 {
+    height: 1.5em;
+    width: 1.5em;
+}
+.h-7 {
+    height: 1em;
+    width: 1em;
+}
+
+/* DISENO DEL FOOTER */
+
+footer {
+    grid-column: 2/5;
+    grid-row: 4/5;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    place-items: center;
+    padding-top: 7%;
+}
+
+a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    transition: color 200ms;
+}
+a:hover{
+    color: #fff;
+    font-weight: 300;
+}
+
+#idiom {
+    grid-column: 1/2;
+}
+#github {
+    grid-column: 2/3;
+    cursor: pointer;
+}
+#lkn {
+    grid-column: 3/4;
+    cursor: pointer;
+}
+#color {
+    grid-column: 4/5;
+    height: 1.5em;
+    width: 1.5em;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+#color:hover {
+    animation: jump 200ms;
+}
+#lkn:hover {
+    animation: jump 200ms;
+}
+#github:hover {
+    animation: jump 200ms;
+}
+
+@keyframes jump {
+    25% { transform: translateY(2px); }
+    50% { transform: translateY(-2px); }
+    75% { transform: translateY(2px); }
+}
